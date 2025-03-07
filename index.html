@@ -16,14 +16,15 @@
     header, footer {
       background: #0072c6;
       color: #fff;
-      padding: 20px;
       text-align: center;
+      margin: 0;
+      padding: 0;
     }
-    /* Style for the logo image */
+    /* Make the header image span the entire header */
     header img {
+      width: 100%;
+      height: auto;
       display: block;
-      margin: 0 auto 10px;
-      max-height: 80px;
     }
     .container {
       max-width: 900px;
@@ -37,10 +38,14 @@
     }
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
     ul li {
       margin-bottom: 10px;
+    }
+    ul li ul {
+      list-style: disc inside;
+      margin-top: 5px;
     }
     .section {
       margin-bottom: 40px;
@@ -53,6 +58,9 @@
     a:hover {
       text-decoration: underline;
     }
+    footer {
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
@@ -64,39 +72,92 @@
     <section class="section">
       <h2>Welcome!</h2>
       <p>
-        Welcome to MATLAB@UNB – where innovation meets hands-on learning! 🌟 At MATLAB@UNB, we’re all about empowering you with skills in data analysis 📊, fluid simulations 🌊, data science applications 🧬, and real-world modeling 🌍. Whether you’re a beginner or a seasoned pro, our community is your launchpad for exploring MATLAB’s vast scope and enhancing your career prospects.
+        Welcome to MATLAB@UNB – where innovation meets hands-on learning! 🌟 At MATLAB@UNB, we empower you with skills in:
+      </p>
+      <ul>
+        <li>Data Analysis 📊</li>
+        <li>Fluid Simulations 🌊</li>
+        <li>Data Science Applications 🧬</li>
+        <li>Real-World Modeling 🌍</li>
+      </ul>
+      <p>
+        Whether you’re a beginner or a seasoned pro, our community serves as your launchpad for exploring MATLAB’s vast scope and enhancing your career prospects.
       </p>
     </section>
 
     <section class="section">
       <h2>What We Stand For</h2>
       <ul>
-        <li><strong>Community &amp; Collaboration 🤝:</strong> Join a vibrant network of students, researchers, and enthusiasts ready to innovate and share knowledge.</li>
-        <li><strong>Growth &amp; Opportunity 🚀:</strong> Boost your CV with credentials and certificates from our exclusive MATLAB learning portal, and gain practical skills that employers value.</li>
+        <li>
+          <strong>Community &amp; Collaboration 🤝:</strong>
+          <ul>
+            <li>Engage with fellow students, researchers, and enthusiasts</li>
+            <li>Collaborate on innovative projects</li>
+            <li>Share knowledge and creative solutions</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Growth &amp; Opportunity 🚀:</strong>
+          <ul>
+            <li>Earn credentials and certificates from our exclusive MATLAB learning portal</li>
+            <li>Boost your CV with practical skills that employers value</li>
+            <li>Participate in workshops and training sessions</li>
+          </ul>
+        </li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Upcoming Highlights</h2>
       <ul>
-        <li><strong>Campus Events &amp; Giveaways 🎁:</strong> Participate in exciting on-campus activities and win cool prizes!</li>
-        <li><strong>Hands-On Training Sessions &amp; Workshops 🛠️:</strong> Get involved in interactive sessions designed to enhance your technical expertise and build real-world project experience.</li>
-        <li><strong>Real-World Projects &amp; Applications 📈:</strong> Dive into projects that explore data analysis, fluid simulations, data science, and modeling, giving you the edge in today’s competitive market.</li>
+        <li>
+          <strong>Campus Events &amp; Giveaways 🎁:</strong>
+          <ul>
+            <li>On-campus contests and networking events</li>
+            <li>Opportunities to win cool prizes</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hands-On Training Sessions &amp; Workshops 🛠️:</strong>
+          <ul>
+            <li>Live coding sessions with MATLAB experts</li>
+            <li>Interactive workshops to boost your technical expertise</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Real-World Projects &amp; Applications 📈:</strong>
+          <ul>
+            <li>Industry collaboration projects</li>
+            <li>Practical problem solving using MATLAB</li>
+          </ul>
+        </li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Stay Connected</h2>
       <ul>
-        <li><strong>GitHub:</strong> Explore our projects and contribute to our growing repository.</li>
-        <li><strong>Socials:</strong> Follow the links in our bio for the latest news, event details, and more exciting opportunities.</li>
+        <li>
+          <strong>GitHub:</strong>
+          <ul>
+            <li>Explore our projects and contribute to our repository</li>
+            <li>Fork and collaborate on code</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Socials:</strong>
+          <ul>
+            <li>Follow our latest news and events on Twitter, Facebook, and LinkedIn</li>
+            <li>Stay updated with our community posts and announcements</li>
+          </ul>
+        </li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Level Up Your Resume</h2>
       <p>
-        Enhance your career by earning certificates on the official MATLAB learning portal. These credentials not only validate your skills but also make your resume stand out in the job market.
+        Enhance your career by earning certificates on the official MATLAB learning portal. These credentials validate your skills and make your resume stand out in the job market.
       </p>
       <p>
         <a href="https://www.mathworks.com/auth-edu-sp/SAML2/POST" target="_blank">Start Your Journey Here</a>
@@ -106,13 +167,22 @@
     <section class="section">
       <h2>Discover the Vibrant Environment of Coders at UNB</h2>
       <p>
-        Explore details about the vibrant community of coders here at UNB, where creativity meets technology and innovation is at the heart of every project.
+        Dive into a dynamic community of coders at UNB, where creativity meets technology and every project is an opportunity to innovate.
       </p>
+      <ul>
+        <li>Join coding groups and workshops</li>
+        <li>Collaborate on university projects</li>
+        <li>Share ideas and grow your network</li>
+      </ul>
     </section>
   </div>
 
   <footer>
     <p>&copy; 2025 MATLAB@UNB | University of New Brunswick, Fredericton</p>
+    <p>
+      <!-- Image source attribution -->
+      Logo image by <a href="https://example.com" target="_blank">Original Author</a> (licensed under CC BY-SA)
+    </p>
   </footer>
 </body>
 </html>
